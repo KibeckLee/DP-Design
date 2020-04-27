@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Avenir' rel='stylesheet'>
+<style>
+body {
+  min-width: 1200px;    
+}   
+.content {
+  margin: 0;
+  font-family: 'Avenir';
+}   
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #CCCCCC;
+  position: fixed;
+  height: 100%;
+  overflow: fixed;
+  top: 0;
+  left: 0;
+}
+.sidebar a {
+  display: block;
+  color: dimgrey;
+  padding: 16px;
+  text-decoration: none;
+  font-family: 'Avenir';
+  z-index: 999;
+}
+.sidebar a.active {
+  background-color: #FF5E21;
+  color: white;
+}
+.sidebar a:hover:not(.active) {
+  background-color: #FF5E21;
+  color: white;
+}
+div.content {
+  margin-left: 300px;
+  padding: 1px 16px;
+  height: 150px;
+  color: dimgrey;
+  font-family: 'Avenir';
+}
+.hometitle {
+    color: dimgrey;
+    text-decoration: underline;
+    font-family: 'Avenir'; 
+    margin-left: 315px
+}
+.hometitlesection {
+    width: 100%;
+    text-align: left;
+    margin-left: 
+}
+.background-title {
+    text-align: center;
+    height: 0.0001px;       
+}
+.background-button {
+    text-align: right;
+    height: 0.0001px;  
+}    
+.background {
+    background-color: white;
+    height: 0.1;
+    margin-left: 0px;
+}  
+.home-button {
+  background-color: #FF5E21;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 1px 2px;
+-webkit-transition-duration: 1s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  top: -100px;
+}
+.home-button:after {
+  content: "";
+  background: #CCCCCC;
+  border-radius: 12px;
+  display: block;
+  position: absolute;
+  padding-top: 200px;
+  padding-left: 110%;
+  margin-top: -35%;
+  margin-left:-20%; 
+  opacity: 0;
+  transition: all 0.2s;
+}
+.home-button:active:after {
+  padding: 0;
+  margin: 0px;
+  opacity: 1;
+  transition: 0s
+}    
+</style>
+</head>  
+<body> 
+<div class="sidebar">
+  <a href="home.html">Home</a>
+  <a href="unit1.html">Human Factors and Ergonomics</a>
+  <a href="unit2.html">Resource Mangement and Sustainable Production</a>
+  <a href="unit3.html">Modelling</a>
+  <a href="unit4.html">Raw Material to Final Product</a>
+  <a href="unit5.html">Innovation and Design</a>
+  <a href="unit6.html">Classic Design</a>
+  <a class="active"href="unit7.html">User-Centred Design [HL]</a>
+  <a href="unit8.html">Sustainability [HL]</a>
+  <a href="unit9.html">Innovation and Markets [HL]</a>
+  <a href="unit10.html">Commercial Production [HL]</a>
+</div>
+<div class="background">
+    <div class="hometitlesection">
+        <h1 class="hometitle" style="font-size:50px">User-Centred Design [HL]</h1>
+    </div>
+</div>
+<div class="background-button">
+  <div class="content">
+      <a href="index.html" class="home-button">Home</a>
+  </div>
+</div>
+<div class="background">
+  <div class="content">
+<!--add content here!-->
+  </div>
+</div>
+    
+</body>
+</html>
