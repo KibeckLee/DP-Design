@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Avenir' rel='stylesheet'>
+<style>
+* {
+font-family: "Avenir";
+margin: 0;
+padding: 0;
+}
+html, body {
+height: 100%;
+}
+.topbar {
+height: 120px;
+background-color: dimgrey;
+color:#fff;
+}
+.topbar-header {
+text-align:center;
+width: 100%;
+margin: auto;
+}
+.topbar h1 {
+padding-top: 34px;
+font-size:50px;
+text-decoration-line: underline;
+}
+.background {
+background-color: #ccc;
+width:100%;
+height:100%;
+text-align:center;
+}
+.main-content {
+min-width: 800px;
+width: 60%;
+height: 100%;
+margin: auto;
+background-color: #fff;
+}
+
+.home-button {
+background-color: #FF5E21;
+border-radius: 12px;
+border: none;
+color: white;
+padding: 5px 20px;
+text-align: right;
+text-decoration: none;
+display: inline-block;
+font-size: 30px;
+margin: 1px 2px;
+-webkit-transition-duration: 0.2s;
+text-decoration: none;
+overflow: hidden;
+cursor: pointer;
+}
+.home-button:after {
+content: "";
+background: #CCCCCC;
+  border-radius: 12px;
+  display: block;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.home-button:active:after {
+  padding: 0;
+  margin: 0px;
+  opacity: 1;
+  transition: 0s
+}
+.background-button {
+position: fixed;
+top: 35px;
+right: 50px;
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+<div class="background-button">
+<div class="content">
+<a href="Home%20Page.html" class="home-button">Home</a>
+</div>
+</div>
+<div class="topbar-header">
+<h1>FAQ</h1>
+</div>
+</div>
+<div class="background">
+<div class="main-content">
+<!-- main content goes here -->
+</div>
+</div>
+</body>
+</html>
